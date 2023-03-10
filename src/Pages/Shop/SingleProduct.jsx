@@ -23,6 +23,9 @@ import banner1024 from "@/assets/img/image_banner.jpg";
 import { Link as ScrollLink } from "react-scroll";
 import { ReactComponent as Toman } from "@/assets/img/toman.svg";
 import DefaultButton from "../../Components/Ui/DefaultButton";
+import CountdownTimer from "../../Components/CountDown/CountdownTimer";
+
+
 
 const SingleProduct = () => {
   const [activeTab, setactiveTab] = useState(1),
@@ -30,6 +33,12 @@ const SingleProduct = () => {
     handleClickActiveTab = (currentTab) => {
       setactiveTab(currentTab);
     };
+
+
+    const THREE_DAYS_IN_MS = 1 * 1 * 2 * 10 * 1000;
+    const NOW_IN_MS = new Date().getTime();
+    const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
 
   return (
     <div className=" relative  mt-20 w-full  mx-auto  flex flex-col  items-start  px-10 mdg:px-20   ">
@@ -54,11 +63,10 @@ const SingleProduct = () => {
             <div className="flex flex-col">
               {/* title pervoius */}
               <span className="text-2xl text-disableOverlay font-semibold text-center">
-                هزینه سرمایه گذاری
-              </span>
+                هزینه محصول              </span>
 
               {/* price */}
-              <div className="flex gap-x-2 py-5">
+              <div className="flex gap-x-2 pb-5">
                 <p className="text-6xl font-bold text-green-700 py-4">
                   328,000
                 </p>
@@ -67,36 +75,9 @@ const SingleProduct = () => {
 
               {/* timer */}
 
-              <div className="flex flex-col py-5 w-full">
-                <p className="text-center text-red-400 font-medium text-3xl">
-                  مانده تا اتمام تخفیف
-                </p>
-                <div className="flex w-full gap-x-10 justify-center  pt-5">
-                  {/* hours */}
-                  <div className="flex flex-col gap-y-1">
-                    <p className="font-bold text-4xl text-headingColor">12</p>
-                    <p className="font-semibold text-2xl text-disableUnique">
-                      ساعت
-                    </p>
-                  </div>
+           <CountdownTimer targetDate={dateTimeAfterThreeDays}/>
 
-                  {/* Minutes */}
-                  <div className="flex flex-col gap-y-1">
-                    <p className="font-bold text-4xl text-headingColor">12</p>
-                    <p className="font-semibold text-2xl text-disableUnique">
-                      دقیقه
-                    </p>
-                  </div>
 
-                  {/* seconds */}
-                  <div className="flex flex-col gap-y-1">
-                    <p className="font-bold text-4xl text-headingColor">09</p>
-                    <p className="font-semibold text-2xl text-disableUnique">
-                      ثانیه
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -504,7 +485,7 @@ const SingleProduct = () => {
                           id="newsest"
                         />
                         <label
-                          className="w-full text-2xl text-headingColor font-medium w-fit"
+                          className=" text-2xl text-headingColor font-medium w-fit"
                           for="newsest"
                         >
                           جدیدترین
@@ -522,7 +503,7 @@ const SingleProduct = () => {
                           id="oldest"
                         />
                         <label
-                          className="w-full text-2xl text-headingColor font-medium w-fit"
+                          className=" text-2xl text-headingColor font-medium w-fit"
                           for="oldest"
                         >
                           قدیمی ترین
@@ -572,7 +553,7 @@ const SingleProduct = () => {
                           id="lt0"
                         />
                         <label
-                          className="w-full text-2xl text-headingColor font-medium w-fit"
+                          className=" text-2xl text-headingColor font-medium w-fit"
                           for="lt0"
                         >
                           کمتر از 100 هزار تومان
@@ -590,7 +571,7 @@ const SingleProduct = () => {
                           id="lth1"
                         />
                         <label
-                          className="w-full text-2xl text-headingColor font-medium w-fit"
+                          className=" text-2xl text-headingColor font-medium w-fit"
                           for="lth1"
                         >
                           بیشتر از 100 هزار تومان
