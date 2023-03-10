@@ -43,6 +43,7 @@
     "iconsax-react": "^0.0.8",
     "lord-icon-element": "^4.0.3",
     "lottie-web": "^5.10.2",
+    "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
     "react-countup": "^6.4.1",

@@ -25,21 +25,21 @@ const Breadcrumbs = () => {
       {/* BreadCrumb */}
       <div className="flex">
         <ul className="flex flex-wrap gap-y-5">
-          <li className=" font-semibold text-xl  md:text-2xl text-headingColor ">
+          <li className=" font-semibold text-2xl  md:text-2xl text-headingColor ">
             <Link to="/singleProduct/?">قرارداد برنامه نویسی طراحی محصول</Link>
           </li>
 
           <span className="mx-4">
             <ArrowRight2 size="20" variant="Bulk" className="text-primary" />
           </span>
-          <li className="text-disableUnique text-xl font-semibold  md:text-2xl">
+          <li className="text-disableUnique  font-semibold  text-2xl">
             <Link to="">دوره آموزشی</Link>
           </li>
 
           <span className="mx-4">
             <ArrowRight2 size="20" variant="Bulk" className="text-primary" />
           </span>
-          <li className="text-disableUnique text-xl font-semibold  md:text-2xl">
+          <li className="text-disableUnique  font-semibold  text-2xl">
             <Link to="/shop">فروشگاه</Link>
           </li>
         </ul>

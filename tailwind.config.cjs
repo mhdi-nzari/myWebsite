@@ -10,6 +10,18 @@ module.exports = {
         wiggle: "wiggle 2s linear infinite",
       },
 
+      keyframes: {
+        jelly: {
+          from: { transform: "scale(1.1)" },
+          "30%": { transform: " scale(1.25, 0.75)" },
+          "40%": { transform: " scale(0.75, 1.25)" },
+          "50%": { transform: " scale(1.15, 0.85)" },
+          "65%": { transform: " scale(0.95, 1.05)" },
+          "75%": { transform: " scale(1.05, 0.95)" },
+          to: { transform: "scale(1.1)" },
+        },
+      },
+
       fontFamily: {
         pinar: ["pinards1fan", "sans-serif"],
         cursive: ["cursive"],

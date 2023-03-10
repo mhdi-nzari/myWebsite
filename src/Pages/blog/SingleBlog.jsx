@@ -12,6 +12,7 @@ import profile from "@/assets/img/profileBlog.png";
 
 import {
   ArrowLeft2,
+  Book,
   Calendar,
   Category2,
   DirectNotification,
@@ -22,6 +23,7 @@ import {
 } from "iconsax-react";
 import BarOfProgress from "@/Components/Ui/BarOfProgress";
 import { Link } from "react-router-dom";
+import MustRead from "../../Components/BlogComponent/MustRead";
 
 const SingleBlog = () => {
   const [categoryMenu, setCategoryMenu] = useState(false),
@@ -84,7 +86,7 @@ const SingleBlog = () => {
                     </div>
                   </div>
 
-                  <h1 className=" mb-6 mt-8 text-right text-3xl font-bold leading-[4rem]  text-headingColor  line-clamp-1 lg:text-[20px]  lg:leading-[3.2rem]">
+                  <h1 className=" mb-6 mt-8 text-right text-3xl font-bold leading-[4rem]  text-headingColor  line-clamp-1 lg:text-[20px]  lg:leading-[3.2rem] w-full  ">
                     سوال اصلی شما "چطوری برنامه نویسی رو به راحت ترین شیوه یاد
                     بگیریم که یادمون نره ؟!!
                   </h1>
@@ -95,6 +97,9 @@ const SingleBlog = () => {
                     ارتباط برقرار کرده و دیگاه خود را در مورد ظاهر کد و طراحی به
                     اشتراک بگذارند.
                   </h2>
+                  <MustRead >
+                  آینده Chat Gbt توی مشت برنامه نویسان 
+                  </MustRead>
                 </div>
               </div>
               <div className="my-14 flex w-full flex-col items-start gap-10 md:flex-row">
@@ -232,7 +237,7 @@ const SingleBlog = () => {
 
             <aside className="top-20 hidden h-fit w-full lg:block">
               <div className="w-full rounded-secondary  border-[1px] border-primary bg-white px-10 shadow-default   ">
-                <b className="badge"></b>
+               
 
                 <div className="flex  w-full  border-b-[1px] border-b-disableOverlay2 py-10">
                   <div className="flex w-full flex-col  ">
@@ -248,7 +253,7 @@ const SingleBlog = () => {
                             variant="Bulk"
                           />
                         </span>
-                        <p className="text-3xl font-semibold text-inherit">
+                        <p className="text-3xl font-medium text-inherit">
                           دسته بندی مقالات
                         </p>
                       </div>
@@ -336,15 +341,14 @@ const SingleBlog = () => {
                       <div className="flex  cursor-default whitespace-nowrap">
                         <span>
                           {/* <BsEmojiSunglasses className="text-secondary text-4xl ml-2" /> */}
-                          <EmojiSad
+                          <Book
                             size="25"
                             className="text-inherit ml-3"
                             variant="Bulk"
                           />
                         </span>
-                        <p className="text-3xl font-semibold text-inherit">
-                          <span className="ml-2 text-inherit ">5</span>
-                          مقاله اخیر
+                        <p className="text-3xl font-medium text-inherit">
+                         مقالات اخیر من
                         </p>
                       </div>
 
@@ -502,7 +506,7 @@ const SingleBlog = () => {
                         <span>
                           <FaRegStarHalf className="ml-2 text-4xl text-secondary" />
                         </span>
-                        <p className="text-3xl font-semibold text-inherit">
+                        <p className="text-3xl font-medium text-inherit">
                           مقالات برگزیده
                         </p>
                       </div>

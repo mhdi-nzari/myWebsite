@@ -219,7 +219,7 @@ const Footer = () => {
                 <li>
                   <a href="https://wa.me/+989162890084">
                     <Whatsapp
-                      className="bg-slate-600 rounded-2xl w-16 h-16 p-2 transition-default text-white hover:text-green-400"
+                      className="text-white text-[14px] bg-slate-600 rounded-2xl w-16 h-16 p-2 transition-default hover:bg-slate-500  "
                       size="32"
                       
                       variant="Bulk"
@@ -229,7 +229,7 @@ const Footer = () => {
                 <li>
                   <a href="http://instagram.com/mhdi_nzari">
                     <Instagram
-                      className="bg-slate-600 rounded-2xl w-16 h-16 p-2 transition-default text-white hover:text-pink-400  "
+                      className="text-white text-[14px] bg-slate-600 rounded-2xl w-16 h-16 p-2 transition-default hover:bg-slate-500  "
                       size="32"
                      
                       variant="Bulk"
@@ -239,7 +239,7 @@ const Footer = () => {
                 <li>
                   <a href="http://t.me/mhdi_nzari">
                     <Send2
-                      className="bg-slate-600 rounded-2xl w-16 h-16 p-2 transition-default text-white hover:text-blue-400  "
+                      className="text-white text-[14px] bg-slate-600 rounded-2xl w-16 h-16 p-2 transition-default hover:bg-slate-500    "
                       size="32"
               
                       variant="Bulk"
